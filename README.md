@@ -5,7 +5,6 @@
 ## Table of Contents
 
 - [Project Structure](#project-structure)
-- [Monorepo Concept](#monorepo-concept)
 - [Tech](#tech)
 - [Documentation](#documentation)
 
@@ -57,15 +56,6 @@ This project is designed for a FastAPI application with integrated CI/CD pipelin
 - **`docs`**
   - **`tutorial-findindfixingsqlinject.md`**: Documentation related to finding and fixing SQL injections.
   - **`versioning.md`**: Documentation detailing the versioning strategy and related scripts.
-
-## Monorepo Concept
-
-This project uses a **monorepo** approach, meaning that it houses multiple related projects and components within a single repository. This approach offers several benefits:
-
-- **Unified Versioning**: All related components, such as the FastAPI application, Docker configurations, Helm charts, and Tekton pipelines, are versioned together. This ensures consistency across different parts of the system.
-- **Simplified CI/CD**: By having all the configurations and scripts in one place, managing and automating the build, test, and deployment processes is streamlined. The CI/CD pipelines can easily integrate with all components without requiring complex inter-repo dependencies.
-- **Easier Refactoring**: Changes that span multiple components can be made and tested in a single commit, ensuring that everything remains in sync and reducing the risk of integration issues.
-- **Centralized Documentation**: All documentation related to the project's structure, versioning, and configuration is consolidated in one place, making it easier to maintain and update.
 
 ## Tech
 
